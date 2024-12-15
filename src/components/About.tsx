@@ -18,7 +18,7 @@ export default function About() {
                     About
                 </h2>
                 <p className="text-lg leading-relaxed">
-                    I am Sameeha, a passionate ServiceNow Developer and Full Stack Developer with experience in building scalable web applications, backend systems, and cloud-based solutions. 
+                    I am Sameeha, a passionate ServiceNow Developer and Full Stack Engineer with experience in building scalable web applications, backend systems, and cloud-based solutions. 
                     I enjoy working with modern technologies like AWS, Node.js, PostgreSQL, React.js and the ServiceNow platform to create efficient and high-performance solutions.
                 </p>
                 <p className="mt-4 text-lg leading-relaxed">
@@ -38,7 +38,7 @@ export default function About() {
     <h3 className="text-xl font-bold text-center md:text-left">TL;DR - Quick Overview</h3>  {/* Center text for small screens */}
     <ul className="space-y-3 py-2">
         <li>
-            <span className="font-semibold">Who I Am:</span> ServiceNow Developer and Full Stack Developer with a knack for building efficient, scalable solutions.
+            <span className="font-semibold">Who I Am:</span> ServiceNow Developer and Full Stack Engineer with a knack for building efficient, scalable solutions.
         </li>
         <li>
             <span className="font-semibold">Worked On:</span> ServiceNow (CSA, CAD, & CIS - ITSM Certified), AWS (Lambda, DynamoDB, Cognito), Node.js, PostgreSQL, React, Spring Boot.
