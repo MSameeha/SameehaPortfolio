@@ -28,28 +28,30 @@ export default function About() {
             </div>
 
             <div
-                className={`relative lg:w-1/3 mt-10 lg:mt-0 bg-white text-emerald-800 rounded-lg shadow-lg p-6 transform transition-transform duration-300 ease-in-out ${
-                    isHovered ? 'translate-y-2 scale-105' : ''
-                }`}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-            >
-                <h3 className="text-xl font-bold">TL;DR - Quick Overview</h3>
-                <ul className="space-y-3 py-2">
-                    <li>
-                        <span className="font-semibold">Who I Am:</span> ServiceNow Developer and Full Stack Developer with a knack for building efficient, scalable solutions.
-                    </li>
-                    <li>
-                        <span className="font-semibold">Worked On:</span> ServiceNow (CSA, CAD, & CIS - ITSM Certified), AWS (Lambda, DynamoDB, Cognito), Node.js, PostgreSQL, React, Spring Boot.
-                    </li>
-                    <li>
-                        <span className="font-semibold">What Drives Me:</span> Solving complex problems, learning new technologies, and adapting to dynamic roles.
-                    </li>
-                    <li>
-                        <span className="font-semibold">Looking For:</span> Software Engineer or ServiceNow Developer roles where I can grow and contribute.
-                    </li>
-                </ul>
-            </div>
+    className={`relative lg:w-1/3 mt-10 lg:mt-0 bg-white text-emerald-800 rounded-lg shadow-lg p-6 transform transition-transform duration-300 ease-in-out ${
+        isHovered ? 'translate-y-2 scale-105' : ''
+    } 
+    sm:w-full md:w-2/3 lg:w-1/3`} // Added responsive width for small and medium devices
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}
+>
+    <h3 className="text-xl font-bold text-center md:text-left">TL;DR - Quick Overview</h3>  {/* Center text for small screens */}
+    <ul className="space-y-3 py-2">
+        <li>
+            <span className="font-semibold">Who I Am:</span> ServiceNow Developer and Full Stack Developer with a knack for building efficient, scalable solutions.
+        </li>
+        <li>
+            <span className="font-semibold">Worked On:</span> ServiceNow (CSA, CAD, & CIS - ITSM Certified), AWS (Lambda, DynamoDB, Cognito), Node.js, PostgreSQL, React, Spring Boot.
+        </li>
+        <li>
+            <span className="font-semibold">What Drives Me:</span> Solving complex problems, learning new technologies, and adapting to dynamic roles.
+        </li>
+        <li>
+            <span className="font-semibold">Looking For:</span> Software Engineer or ServiceNow Developer roles where I can grow and contribute.
+        </li>
+    </ul>
+</div>
+
         </section>
     );
 }

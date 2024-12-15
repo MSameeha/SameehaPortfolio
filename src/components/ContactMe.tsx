@@ -1,39 +1,35 @@
-import { Montserrat } from '@next/font/google';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FaPhone } from "react-icons/fa6";
 
-const montserrat = Montserrat({ 
-    subsets: ['latin'], 
-    weight: 'variable' 
-});
 
 export default function ContactMe() {
     return (
-        <section id="contact" className="flex justify-center items-center py-20">
-            <div className={montserrat.className}>
-                <div className="flex mx-auto px-64 py-20">
+        <section id="contact" className="flex justify-center items-center py-16 md:py-20">
+            <div className="flex flex-col md:flex-row mx-auto px-6 md:px-64 py-0 md:py-20">
                     <div className="mb-8 md:mb-0 md:mr-10 w-full md:w-1/3">
-                        <h3 className="text-2xl font-semibold mb-4">Get in touch with me!</h3>
-                        <div className="flex">
-                            <div className="transform -translate-x-1/2 h-20 border-l-2 border-gray-300"></div>
-                            <a href="https://www.linkedin.com/in/sameehamubeen/" target="_blank" rel="noopener noreferrer" className='mt-24 -mx-4'>
+                        <h3 className="text-2xl font-semibold mb-4 text-center md:text-left">Get in touch with me!</h3>
+                        <div className="flex justify-center md:justify-normal">
+                            <div className="transform -translate-x-1/2 h-2 md:h-20 border-l-2 border-gray-300 hidden md:block"></div>
+                            <a href="https://www.linkedin.com/in/sameehamubeen/" target="_blank" rel="noopener noreferrer" className='mt-10 md:mt-24 -mx-4'>
                                 <FaLinkedin className="text-3xl text-gray-800 hover:text-emerald-800 transition duration-300" />
                             </a>
-                            <a href="https://www.linkedin.com/in/sameehamubeen/" target="_blank" rel="noopener noreferrer" className='mt-24 mx-7 text-xl py-1 hover:text-emerald-800 font-medium'>LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/sameehamubeen/" target="_blank" rel="noopener noreferrer" className='mt-10 md:mt-24 md:mb-2 mx-7 text-xl py-1 hover:text-emerald-800 font-medium'>LinkedIn</a>
                         </div>
-                        <div className="flex">
-                            <div className="transform -translate-x-1/2 h-20 border-l-2 border-gray-300 mt-2"></div>
-                            <a href="https://github.com/MSameeha" target="_blank" rel="noopener noreferrer" className='mt-24 -mx-4'>
+
+                        <div className="flex justify-center md:justify-normal">
+                            <div className="transform -translate-x-1/2 h-2 md:h-20 border-l-2 border-gray-300 hidden md:block"></div>
+                            <a href="https://github.com/MSameeha" target="_blank" rel="noopener noreferrer" className='mt-10 md:mt-28 -mx-4'>
                                 <FaGithub className="text-3xl text-gray-800 hover:text-emerald-800 transition duration-300" />
                             </a>
-                            <a href="https://github.com/MSameeha" target="_blank" rel="noopener noreferrer" className='mt-24 mx-7 text-xl py-1 hover:text-emerald-800 font-medium'>Github</a>
+                            <a href="https://github.com/MSameeha" target="_blank" rel="noopener noreferrer" className='mt-10 md:mt-28 mx-7 text-xl py-1 hover:text-emerald-800 font-medium'>Github</a>
                         </div>
-                        <div className="flex">
-                            <div className="transform -translate-x-1/2 h-20 border-l-2 border-gray-300 mt-2"></div>
-                            <a href="tel:+918688669479" className='mt-24 -mx-4'>
-                                <FaPhone className="text-3xl text-gray-800 hover:text-emerald-800 transition duration-300" />
+
+                        <div className="flex justify-center md:justify-normal items-center">
+                            <div className="transform -translate-x-1/2 md:h-20 border-l-2 border-gray-300 hidden md:block"></div>
+                            <a href="tel:+918688669479" className='mt-10 md:mt-24 -mx-4'>
+                                <FaPhone className="text-3xl md:mt-6 text-gray-800 hover:text-emerald-800 transition duration-300" />
                             </a>
-                            <a href="tel:+918688669479" className='mt-24 mx-7 text-xl py-1 hover:text-emerald-800 font-medium'>Phone</a>
+                            <a href="tel:+918688669479" className='mt-10 md:mt-32 mx-7 text-xl hover:text-emerald-800 font-medium'>Phone</a>
                         </div>
                     </div>
                     
@@ -47,7 +43,6 @@ export default function ContactMe() {
                         <p className="mt-4">Thank you for checking out my profile! I'm always looking forward to connecting with like-minded individuals and exploring new ventures.</p>
                     </div>
                 </div>
-            </div>
         </section>
     );
 }
