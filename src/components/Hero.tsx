@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { TbFileCv } from "react-icons/tb";
+import { FaPhone } from "react-icons/fa6";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 
 
@@ -22,11 +22,10 @@ export default function Hero() {
                 <span>]</span>
             </div>
             <a
-                href="/resume.pdf"
-                target="_blank"
+                href="#contact"
                 className="inline-block px-4 sm:px-6 py-2 mt-4 text-white bg-emerald-800 rounded-lg shadow hover:bg-emerald-700 transition duration-300"
             >
-                <p className="text-base sm:text-lg">Check out my Resume!</p>
+                <p className="text-base sm:text-lg">Get in Touch!</p>
             </a>
             </div>
         </section>
@@ -52,12 +51,10 @@ export default function Hero() {
             </a>
             <div className="relative h-6 sm:h-10 border-l-2 border-gray-300"></div>
             <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="tel:+918688669479" 
             className="py-2"
             >
-            <TbFileCv className="text-3xl sm:text-4xl text-gray-800 hover:text-emerald-800 transition duration-300" />
+            <FaPhone className="text-9xl px-1 sm:text-4xl text-gray-800 hover:text-emerald-800 transition duration-300" />
             </a>
         </div>
     </div>

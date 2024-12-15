@@ -32,9 +32,9 @@ export default function Navbar() {
                     <a href="#contact" className="cursor-pointer hover:text-emerald-800 font-semibold">
                         Contact Me
                     </a>
-                    <a href="/resume.pdf" target="_blank" className="cursor-pointer hover:text-emerald-800 font-semibold">
+                    {/* <a href="/resume.pdf" target="_blank" className="cursor-pointer hover:text-emerald-800 font-semibold">
                         Resume
-                    </a>
+                    </a> */}
                 </div>
 
                 <div className="flex justify-between items-center lg:hidden p-4">
@@ -80,14 +80,14 @@ export default function Navbar() {
                         >
                             Contact Me
                         </a>
-                        <a 
+                        {/* <a 
                             href="/resume.pdf" 
                             target="_blank" 
                             className="cursor-pointer hover:text-emerald-800 font-semibold"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Resume
-                        </a>
+                        </a> */}
                     </div>
                 )}
             </div>
