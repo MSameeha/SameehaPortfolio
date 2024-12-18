@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Montserrat } from '@next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: "Sameeha Mubeen",
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={montserrat.className}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
