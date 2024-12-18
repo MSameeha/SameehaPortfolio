@@ -19,10 +19,10 @@ export default function About() {
                 </h2>
                 <p className="text-lg leading-relaxed">
                     I am Sameeha, a passionate ServiceNow Developer and Full Stack Engineer with experience in building scalable web applications, backend systems, and cloud-based solutions. 
-                    I enjoy working with modern technologies like AWS, Node.js, PostgreSQL, React.js and the ServiceNow platform to create efficient and high-performance solutions.
+                    I am proficient with modern technologies like AWS, Node.js, PostgreSQL, React.js and the ServiceNow platform to create efficient and high-performance solutions.
                 </p>
                 <p className="mt-4 text-lg leading-relaxed">
-                    In my current role, I focus on enhancing CRM and CPQ solutions, delivering optimizations, and ensuring smooth project implementations. With a strong background in Computer Science fundamentals, 
+                    In my current role, I focus on enhancing CRM(Customer relationship management) and CPQ(Configure, Price, Quote) solutions, delivering optimizations, and ensuring smooth project implementations. With a strong background in Computer Science fundamentals, 
                     I am always looking for opportunities to learn new technologies and expand my skills in the backend and full stack development areas.
                 </p>
             </div>
